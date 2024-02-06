@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ofertas</title>
+  <script>
+  let count = 1;
+  
+  function openPopup() {
+    count++;
+    const url = `/${count}+"(popup:compose)"`;
+    window.open(url, 'popupWindow', 'width=600,height=600');
+  }
+  </script>
+</head>
+<body>
+  
+<div *ngIf="crisis">
+  <img src="/router-complete/src/assets/img/febrero_temp.webp" alt="Imagen de ofertas">
+  <h3>{{ editName }}</h3>
+  <p>Id: {{ crisis.id }}</p>
+  <button onclick="openPopup()">Foro</button>
+  <button >Cotizador</button>
+</div>
+</body>
+</html>

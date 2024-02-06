@@ -1,0 +1,87 @@
+.header {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-section,
+.right-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+}
+
+.login-button {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-top: 10px; /* Espacio entre el logo y el botón de inicio de sesión */
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  margin-top: 10px; /* Espacio entre la frase y los botones del menú */
+}
+
+.menu-button {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.menu-button:first-child {
+  margin-left: 0;
+}
+
+.menu-button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+img{
+  width: 80px; /* Ancho del logo */
+  height: 80px; /* Altura del logo */
+}
+
+.footer {
+  background-color: #f0f0f0;
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-item {
+  flex-basis: calc(16.666% - 5px); /* Divide en 6 columnas */
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 12px; /* Tamaño de fuente más pequeño */
+}
+
+.footer-item h3 {
+  margin: 0;
+  padding: 3px 0;
+  border-bottom: 1px solid #333;
+}
+
+.company-info img {
+  max-width: 80px; /* Ajusta el tamaño máximo del logo según sea necesario */
+}
+
+.company-info p {
+  font-weight: bold;
+  margin-top: 3px;
+}

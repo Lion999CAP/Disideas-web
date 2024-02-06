@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<header class="header">
+  <div class="left-section">
+    <h1>Imagina tu diseño, nosotros lo hacemos realidad</h1>
+    <nav class="menu">
+      <div class="wrapper">
+        <nav>
+          <a routerLink="/crisis-center" routerLinkActive="active" ariaCurrentWhenActive="page">Ofertas</a>
+          <a routerLink="/superheroes" routerLinkActive="active" ariaCurrentWhenActive="page">Productos</a>
+          <a [routerLink]="[{ outlets: { popup: ['compose'] } }]">Foro</a>
+        </nav>
+      </div>
+    </nav>
+  </div>
+  <div class="right-section">
+    <div class="logo">
+      <img src="../assets/img/DisIdea_logo.jpg" alt="logo de Disideas">
+    </div>
+    <div class="wrapper">
+      <nav>
+        <a routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page">Login</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<body>
+  <div [@routeAnimation]="getRouteAnimationData()">
+    <router-outlet></router-outlet>
+  </div>
+  <router-outlet name="popup"></router-outlet>
+</body>
+
+<footer class="footer">
+  <div class="footer-item">
+    <h2>Sobre Nosotros</h2>
+    Imagina tu diseño, nosotros lo hacemos realidad
+  </div>
+  <div class="footer-item">
+    <h2>Contacto</h2>
+    <p>(02) 2850 292</p>
+    <p>disideas&#64;outlook.com</p>
+    <p>Facebook: DisIdeasEcuador</p>
+    <p>Instagram: Disideas</p>
+    <p>Tik Tok: disideas</p>
+  </div>
+  <div class="footer-item">
+    <h2>Ubicación</h2>
+    <p>Dirección: Av. Ilalo y Alondras, Vía al Tingo (Valle de los Chillos), Quito, Pichincha</p>
+  </div>
+  <div class="footer-item">
+    <h2>Contactame</h2>
+    <p>Github:<a href="https://github.com/Lion999CAP">Proyectos</a></p>
+    <p>llaras1&#64;est.ups.edu.ec</p>
+  </div>
+  <div class="footer-item">
+    <div class="company-info">
+      <img src="../assets/img/DisIdea_logo.jpg" alt="logo de Disideas">
+      <p>Disideas</p>
+    </div>
+  </div>
+</footer>
+
+</html>

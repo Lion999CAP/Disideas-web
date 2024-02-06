@@ -1,0 +1,12 @@
+<h2>Productos</h2>
+<ul class="heroes">
+  <li *ngFor="let hero of heroes$ | async" [class.selected]="hero.id === selectedId">
+    <div>
+      <a [routerLink]="['/hero', hero.id]"> </a>
+        <img src="/router-complete/src/assets/img/camiseta_sub.jpg" alt="Imagen del héroe">
+      <button >Foro</button>
+      <button >Cotizador</button>
+    </div>    
+  </li>
+</ul>
+

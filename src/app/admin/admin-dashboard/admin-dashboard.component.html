@@ -1,0 +1,61 @@
+<h3>Dashboard</h3>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+</head>
+
+<header>
+  <p>Session ID: {{ sessionId | async }}</p>
+<div id="anchor"></div>
+<p>Token: Admin</p>
+
+</header>
+
+<body>
+  <div class="dashboard">
+    <nav class="sidebar">
+      <!-- Menú de navegación -->
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Estadísticas</a></li>
+        <li><a href="#">Gráficos</a></li>
+        <li><a href="#">Configuración</a></li>
+      </ul>
+    </nav>
+    <div class="main-content">
+      <header class="header">
+        <h1>Dashboard</h1>
+        <a href="/login">
+          <button>Cerrar sesión</button>
+        </a>
+      </header>
+      <div class="charts">
+        <!-- Gráficos y estadísticas -->
+        <div class="chart">Pedidos</div>
+        <div class="chart">Entregados</div>
+        <div class="chart">Envio</div>
+      </div>
+      <div class="table">
+        <table>
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Admin</td>
+              <td>llaras1&#64;est.ups.edu.ec</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

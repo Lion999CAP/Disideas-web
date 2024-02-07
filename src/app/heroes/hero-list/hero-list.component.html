@@ -3,7 +3,9 @@
   <li *ngFor="let hero of heroes$ | async" [class.selected]="hero.id === selectedId">
     <div>
       <a [routerLink]="['/hero', hero.id]"> </a>
-        <img src="/router-complete/src/assets/img/camiseta_sub.jpg" alt="Imagen del héroe">
+      <span class="badge">{{ hero.id }}</span>{{ hero.name }}
+      <p>Precio: 4.99$</p>
+      <img src="../assets/img/camiseta_sub.jpg" alt="Imagen del producto">
       <button >Foro</button>
       <button >Cotizador</button>
     </div>    

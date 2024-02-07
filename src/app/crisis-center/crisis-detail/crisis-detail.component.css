@@ -6,3 +6,8 @@ input {
   font-size: 1rem;
   margin-top: 1rem;
 }
+
+img{
+  height: 80px;
+  width: 80px;
+}
